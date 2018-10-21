@@ -1,0 +1,388 @@
+@import 'rupture'
+@import "variable/_function.styl"
+@import "variable/_fonts.styl"
+@import "variable/_ie.styl"
+@import "icon/sprite.css"
+@import "variable/_helper.styl"
+@import "variable/_default.styl"
+@import "variable/_elements.styl"
+@import "variable/_constant.styl"
+@import "../module/**/*"
+
+body
+	@extend .type--main
+	line-height 1.2
+	letter-spacing 0.01em
+	color #8992A3
+	font-family: 'vbank'
+.main-cont
+	center(1200px,10px)
+
+
+.page
+	min-height 100vh
+	f()
+
+.toolbar
+	width: 300px
+.content
+	background: #F7F8FA
+	width: calc(100% - 300px)
+	padding: 50px
+	p
+		font-weight:
+//.toolbar__list
+.toolbar__list-el
+	padding: 20px 30px
+	border-top 1px solid #F7F8FA
+	border-bottom 1px solid #F7F8FA
+	margin-bottom: -1px
+	cp()
+	tr(all)
+	font-weight:700
+	&:hover
+		color $blue
+
+.toolbar__list-el--active
+	position: relative
+	color $blue
+	&:before
+		content ''
+		position: absolute
+		height: 100%
+		width:4px
+		background: $blue
+		top 0
+		left 0
+
+
+
+.content__wrap
+	max-width 1200px
+.content__title
+	@extend .type--lg
+	color $blue
+	margin-bottom: 20px
+	flex(between)
+	.icon
+		size 32px
+		fill $blue
+		cp()
+.service
+	margin-top: 40px
+	display: grid
+	grid-gap 30px
+	grid-template-columns repeat(3,1fr);
+
+.service__el
+	br(10px)
+	f()
+	cp()
+	tr(all)
+	background: white
+	padding: 20px
+	&:hover
+		box-shadow 0px 10px 10px #c5c2c2
+.service__el-icon
+	margin-right: 20px
+	position: relative
+	size 60px
+	flex(mid)
+	.icon
+		size 32px
+.service__el-icon-coner
+	position: absolute
+	width: 100%
+	height: 100%
+	top 0
+	left 0
+	size 70px
+	.icon
+		size 60px
+
+.service__el--blue
+	.icon
+		fill $blue
+
+.service__el--purp
+	.icon
+		fill #882C80
+	//.service__el-title
+	//	color #882C80
+
+.service__el--red
+	.icon
+		fill #C22353
+
+.service__el--orange
+	.icon
+		fill #F28230
+	//.service__el-title
+	//	color #F28230
+
+.service__el--green
+	.icon
+		fill #62BB47
+	//.service__el-title
+	//	color #62BB47
+
+.service__el-title
+	font-size: 16px
+	margin-bottom: 10px
+	font-weight:700
+	line-height: 1.5
+	color $blue
+
+.service__el-text
+	line-height: 1.6
+	font-size: 12px
+
+.service__el-content
+	width calc(100% - 80px)
+
+.service__el-footer
+	f()
+
+.service__el-footer
+	margin-top: 20px
+
+.service__el-more
+	cp()
+	font-weight: 300
+	font-size: 14px
+	opacity: .4
+	tr(all)
+	tr(all)
+	&:hover
+		opacity: 1
+.service__el-get
+	cp()
+	tr(all)
+	color $blue
+	font-size: 14px
+	margin-right: 20px
+	font-weight: 300
+	&:hover
+		color lighten($blue,25)
+
+.logo
+	flex(mid)
+	margin: 30px 0
+	img
+		margin-left: -40px
+
+.tab-head
+	f()
+	border-bottom 1px solid $gray
+.tab-head__el
+	padding: 20px 30px
+	font-weight:300
+	cp()
+	&:hover
+		color $blue
+
+.tab-head__el--active
+	opacity: 1
+	border-bottom 2px solid $blue
+	color $blue
+	font-weight: 700
+
+.content__title-sub
+	margin-bottom: 40px
+	opacity: .7
+
+.item-title-icon
+	margin-right: 20px
+	position: relative
+	size 60px
+	flex(mid)
+	.icon
+		size 32px
+		fill #882C80
+
+.item-title-icon-coner
+	position: absolute
+	width: 100%
+	height: 100%
+	top 0
+	left 0
+	size 70px
+	.icon
+		size 60px
+		fill #882C80
+
+.item__title
+	f()
+	align-items: center
+	@extend .type--lg
+	color $blue
+	margin-bottom: 60px
+
+.item-param
+	margin-bottom: 50px
+
+.item-param__el
+	f()
+	margin-bottom: 15px
+.item-param__el-title
+	font-weight:700
+	color black
+	margin-right: 20px
+	width: 250px
+	opacity:.8
+
+
+
+.item-important
+	padding: 30px
+	br(10px)
+	background: #00358008
+	margin-bottom: 30px
+
+.item-important__title
+	@extend .type--mdx
+	font-weight: bold
+	color $blue
+	margin-bottom: 15px
+	padding-bottom: 20px
+	border-bottom 1px solid #eaeaea
+.item-important__text
+	line-height: 1.6
+
+.item-text
+	line-height: 1.6
+	margin-bottom: 40px
+.item-step
+	margin: 60px 0
+	margin-left: 15px
+.item-step__el
+	border-left 2px solid $blue
+	padding-left: 60px
+	padding-bottom: 60px
+	position: relative
+
+.item-step__el-title
+	@extend .type--md
+	color black
+	margin-bottom: 10px
+.item-step__el-text
+	width: 70%
+	line-height: 1.6
+
+.item-step__val
+	size 40px
+	background: white
+	border 2px solid $blue
+	flex(mid)
+	round()
+	font-weight 700
+	color $blue
+	position: absolute
+	left -20px
+
+.item-step__val--check
+	border 1px solid $blue
+	bottom 0
+	background: $blue
+	.icon
+		size 20px
+		fill white
+
+.item-step__el--last
+	padding-bottom: 100px
+
+.bread
+	f()
+	margin-bottom: 40px
+.bread__el
+	margin-right: 30px
+	position: relative
+	&:last-child
+		opacity:.5
+		&:before
+			content '>'
+			display: none
+	&:before
+		content '>'
+		position: absolute
+		right: -20px
+
+.item-faq
+	display: grid
+	grid-gap 30px
+	grid-template-columns 1fr 1fr;
+	margin-bottom: 60px
+.item-faq__el
+	background: white
+	br(10px)
+	padding: 30px
+.item-faq__el-title
+	@extend .type--mdx
+	margin-bottom: 20px
+	color $blue
+	font-weight:300
+
+.item-faq__el-text
+	line-height: 1.6
+	font-size: 14px
+
+.faq-title
+	f()
+	align-items: center
+	.icon
+		size 40px
+		fill $blue
+		margin-right: 30px
+	@extend .type--md
+	color $blue
+	margin-bottom: 30px
+	padding-bottom: 30px
+	border-bottom 1px solid #eaeaea
+
+.item-load
+	f()
+	margin-bottom: 60px
+.item-load__el
+	f()
+	align-items: center
+	margin-right: 30px
+	margin-top: 10px
+	cp()
+.item-load__el-icon
+	.icon
+		size 28px
+		fill $blue
+		opacity:.8
+	margin-right: 5px
+
+.more
+	f()
+	fw()
+
+.more__el
+	br(20px)
+	margin-right: 30px
+	margin-top: 20px
+	cp()
+	&:hover
+		color $blue
+
+.get-btn
+	&:hover
+		background: lighten($blue,10)
+	@extend .btn--md
+	@extend .btn--mark
+	br(30px)
+	margin-left: auto
+	width: 220px
+
+.item-load__el-text
+	tr(all)
+	&:hover
+		color $blue
+
+.item-step__el--last
+	padding-bottom: 10px
+	.item-step__el-title
+		margin-bottom: 0
+		padding-top: 0

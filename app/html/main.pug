@@ -1,0 +1,135 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page
+	.toolbar
+		.logo
+			img(src="img/logo-svg.svg", alt="")
+		.toolbar__list
+			.toolbar__list-el.toolbar__list-el--active Главная страница
+			.toolbar__list-el Каталог сервисов
+			.toolbar__list-el Обращения портала
+			.toolbar__list-el Услуга из списка
+
+	.content
+		.content__wrap
+			.bread
+				.bread__el Главная
+				.bread__el Услуги
+				.bread__el Подготовка документов
+			.content__title
+				span Добро пожаловать в каталог услуг
+				+icon("magnifying-glass","icon")
+			.content__title-sub С другой стороны консультация с широким активом позволяет  выполнять важные задания по разработке направлений прогрессивного развития.
+
+			.tab
+				.tab-head
+					.tab-head__el.tab-head__el--active Все услуги
+					.tab-head__el Жизненные ситуации
+				.tab-container
+					.service
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("suitcase","icon")
+							.service__el-content
+								.service__el-title Электронная библиотека
+								.service__el-text Значимость этих проблем настолько очевидна, что рамки и место обучения этих проблем настольк
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+						a(href="item.html").service__el.service__el--purp
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("shield","icon")
+							.service__el-content
+								.service__el-title Подбор персонала
+								.service__el-text Идейные соображения высшего порядка, а также укрепление и развитие структуры требуют определения
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("headset","icon")
+							.service__el-content
+								.service__el-title Надбавка
+								.service__el-text Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("book","icon")
+							.service__el-content
+								.service__el-title Доплата
+								.service__el-text Значимость этих проблем настолько очевидна, что укрепление и развитие структуры способствует подготовки
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+
+						a(href="item.html").service__el.service__el--green
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("creative","icon")
+							.service__el-content
+								.service__el-title Работа в выходной день
+								.service__el-text Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+
+						a(href="item.html").service__el.service__el--orange
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("chess-piece","icon")
+							.service__el-content
+								.service__el-title Подбор персонала
+								.service__el-text Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+						a(href="item.html").service__el.service__el--red
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("target","icon")
+							.service__el-content
+								.service__el-title Проверка СБ
+								.service__el-text Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("computer","icon")
+							.service__el-content
+								.service__el-title Оформление кандидата на работу
+								.service__el-text Значимость этих проблем настолько очевидна, что укрепление и развитие структуры способствует подготовки
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+
+						a(href="item.html").service__el.service__el--green
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("search","icon")
+							.service__el-content
+								.service__el-title Увольнение сотрудника
+								.service__el-text Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности требуют определения
+								.service__el-footer
+									.service__el-get Получить
+									.service__el-more Подробнее
+include ./block_html/_script.pug
