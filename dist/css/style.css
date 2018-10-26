@@ -1152,6 +1152,10 @@ body {
   color: #003580;
   margin-bottom: 60px;
 }
+.item__title span {
+  width: -webkit-calc(100% - 260px);
+  width: calc(100% - 260px);
+}
 .item-param {
   margin-bottom: 50px;
 }
@@ -1185,6 +1189,7 @@ body {
 }
 .item-important__text {
   line-height: 1.6;
+  color: #003580;
 }
 .item-text {
   line-height: 1.6;
@@ -1199,6 +1204,10 @@ body {
   padding-left: 60px;
   padding-bottom: 60px;
   position: relative;
+}
+.item-step__el .item-important {
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 .item-step__el-title {
   color: #111;
@@ -1383,4 +1392,10 @@ body {
 .item-step__el--last .item-step__el-title {
   margin-bottom: 0;
   padding-top: 0;
+}
+p {
+  margin-top: 0;
+}
+.link--mark {
+  text-decoration: underline;
 }

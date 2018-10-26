@@ -217,6 +217,8 @@ body
 	@extend .type--lg
 	color $blue
 	margin-bottom: 60px
+	span
+		width: calc(100% - 260px)
 
 .item-param
 	margin-bottom: 50px
@@ -248,7 +250,7 @@ body
 	border-bottom 1px solid #eaeaea
 .item-important__text
 	line-height: 1.6
-
+	color $blue
 .item-text
 	line-height: 1.6
 	margin-bottom: 40px
@@ -260,7 +262,9 @@ body
 	padding-left: 60px
 	padding-bottom: 60px
 	position: relative
-
+	.item-important
+		margin-top: 30px
+		margin-bottom: 0
 .item-step__el-title
 	@extend .type--md
 	color black
@@ -386,3 +390,9 @@ body
 	.item-step__el-title
 		margin-bottom: 0
 		padding-top: 0
+
+p
+	margin-top: 0
+
+.link--mark
+	text-decoration: underline
