@@ -1,0 +1,98 @@
+include block_html/_style.pug
+include block_html/_include.pug
+
+.page.page--school
+	.toolbar
+		.logo
+			img(src="img/logo-scholl.jpg", alt="")
+		.toolbar__list
+			.toolbar__list-el Расписание
+			.toolbar__list-el Учебные планы
+			.toolbar__list-el.toolbar__list-el--active Каталог услуг
+			.toolbar__list-el Общежитие
+			.toolbar__list-el Заявления
+			.toolbar__list-el Контакты
+	.content
+		.content__wrap
+			.bread
+				.bread__el Каталог услуг
+				.bread__el Общежитие
+				.bread__el Заявления
+			.content__title
+				span Добро пожаловать в каталог услуг
+				+icon("magnifying-glass","icon")
+			.content__title-sub ЛК предназначен для автоматизации процессов предоставления сервисов Академии.
+			.tab
+				.tab-head
+					.tab-head__el.tab-head__el--active Все услуги
+					.tab-head__el Жизненные ситуации
+				.tab-container
+					.service
+						a(href="item.html").service__el.service__el--blue
+
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("diploma","icon")
+							.service__el-content
+								.service__el-title Запрос документов
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("telescope","icon")
+							.service__el-content
+								.service__el-title Дисциплины по выбору
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("clipboard","icon")
+							.service__el-content
+								.service__el-title Академическая справка
+
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("hand","icon")
+							.service__el-content
+								.service__el-title Оплата обучения
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("employee","icon")
+							.service__el-content
+								.service__el-title Практики и Стажировки
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("list","icon")
+							.service__el-content
+								.service__el-title Экзаменационный лист
+
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("key","icon")
+							.service__el-content
+								.service__el-title Оплата общежития
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("gym","icon")
+							.service__el-content
+								.service__el-title Физическая культура и спорт
+						a(href="item.html").service__el.service__el--blue
+							.service__el-icon
+								.service__el-icon-coner
+									+icon("coner","icon")
+								+icon("graduation","icon")
+							.service__el-content
+								.service__el-title Справка об обучении
+
+include ./block_html/_script.pug
